@@ -1,1 +1,3 @@
-### JavaScript Notes 
+***
+> ### JavaScript Notes
+> ***
