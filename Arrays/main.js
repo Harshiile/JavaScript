@@ -17,7 +17,11 @@ let x = new Array(1, 2, 3, 4, 5, 6, 7, 8, 9) // Follows shallow copy
 // x.slice(2, 5) // just send copy of sliced array , return new array
 // let y = x.splice(2, 5) // send sliced array , original array -= sliced array
 
-// let y = x.reduce((x, y) => { return x + y }) // Give single value where x is result of result callback, y is current element
+// let initialVal = 10
+// const cb = (x, y) => (x + y)
+// let y = x.reduce(cb, initialVal) // Give single value where x is result of result callback, y is current element and initially x can't take result hence it take x=initialVal
+// console.log(y);
+
 
 // let z = x.concat(y) // Join two arrays, return new array
 
