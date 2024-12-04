@@ -63,4 +63,20 @@ console.log(this);
 // --------------------------------------------------------------------
 
 
-// Arrow functions
+// Implicit return & Explicit return
+
+// Implicit : return keyword is not required, also instead of curly brackets, we use parentheses
+// *******--------- IIFE also use implicit return but don't forget when you use implicit return, must use ; to end the context ------*********
+
+const add_1 = (num1, num2) => { return num1 + num2 } // Explicit
+const add_2 = (num1, num2) => (num1 + num2);// Implicit
+
+
+// IIFE - Immediate Invoke Function Expression
+// ---- It uses for solving problem of pollution of global scope variables
+((name) => {
+    console.log(`Hello ${name}`);
+})('Harshil');
+
+
+// --------------------------------------------------------------------
