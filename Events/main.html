@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #121212;
+        }
+
+        * {
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        #py {
+            margin-left: 50rem;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li id="cpp">C++</li>
+        <li id="js">JavaScript</li>
+        <li id="java">Java</li>
+        <li id="py">Python</li>
+        <li id="rs">Rust</li>
+    </ul>
+    <script>
+        let ul = document.querySelector('ul')
+        ul.addEventListener('click', (e) => {
+            // console.log(e.currentTarget); // points to element where the event listener is attached - i.e. ul
+            // console.log(e.target); // points to element that initially triggered the event - i.e. li
+            // console.log(e.srcElement); // e.srcElement is older approach, e.target is new
+
+            // console.log(e.clientX, e.clientY); // distance from top-left corner of browser screen
+            // console.log(e.screenX, e.screenY); // distance from top-left corner of desktop screen
+            // console.log(e.offsetX, e.offsetY); // distance from top-left corner of that element
+
+            console.log('ul clicked');
+        }, true)
+        document.querySelector('#js').addEventListener('click', (e) => {
+            console.log('li clicked');
+        })
+
+
+        // Third parameter of addEventListner - Boolean -  Default is false
+        // true - Capturing event propogation
+        // false - Bubbling event propogation
+        // Event Propogation : How events invoke through the DOM tree when event occurs
+        // 1) Capturing Phase : Starts from the outermost element to event triggered element (Top to Bottom)
+        // 2) Bubbling Phase : Starts from event triggered element to the outermost element (Bottom to Top)
+    </script>
+</body>
+
+</html>

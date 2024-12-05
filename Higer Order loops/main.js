@@ -1,5 +1,3 @@
-// For of,For in & For each for map,array,object
-
 const arr = [23, 54, 87, 26, 48, 92]
 const obj = {
     name: 'Harshil',
@@ -204,7 +202,7 @@ const books = [
 
 
 // map : Use to just filters/destructre each elements from array of objects
-console.log(books.map(book => book.publishYear)); // array of publishYear
+// console.log(books.map(book => (book.bookName))); // array of publishYear
 
 
 // Chaining : multiple methods in single flow/line
