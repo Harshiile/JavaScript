@@ -1,4 +1,4 @@
-# JavaScript Overview
+# JavaScript Rejected Req
 
 JavaScript (JS) is a high-level, dynamic, and interpreted programming language that is widely used in web development to create interactive and dynamic content on websites. It is one of the core technologies of the web, alongside HTML and CSS.
 
